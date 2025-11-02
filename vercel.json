@@ -1,0 +1,17 @@
+{
+  "routes": [
+    {
+      "src": "/apple-app-site-association",
+      "dest": "/.well-known/apple-app-site-association"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(apple-app-site-association|.well-known/apple-app-site-association)",
+      "headers": [
+        { "key": "Content-Type", "value": "application/json" },
+        { "key": "Cache-Control", "value": "public, max-age=300" }
+      ]
+    }
+  ]
+}
