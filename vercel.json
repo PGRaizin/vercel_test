@@ -1,8 +1,8 @@
 {
-  "routes": [
+  "rewrites": [
     {
-      "src": "/apple-app-site-association",
-      "dest": "/.well-known/apple-app-site-association"
+      "source": "/apple-app-site-association",
+      "destination": "/.well-known/apple-app-site-association"
     }
   ],
   "headers": [
