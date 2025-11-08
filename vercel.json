@@ -3,6 +3,14 @@
     {
       "source": "/apple-app-site-association",
       "destination": "/.well-known/apple-app-site-association"
+    },
+    {
+      "source": "/link",
+      "destination": "/api/link"
+    },
+    {
+      "source": "/link/(.*)",
+      "destination": "/api/link"
     }
   ],
   "headers": [
@@ -11,6 +19,13 @@
       "headers": [
         { "key": "Content-Type", "value": "application/json" },
         { "key": "Cache-Control", "value": "public, max-age=300" }
+      ]
+    },
+    {
+      "source": "/link(.*)",
+      "headers": [
+        { "key": "Content-Type", "value": "text/html; charset=utf-8" },
+        { "key": "Cache-Control", "value": "public, max-age=60" }
       ]
     }
   ]

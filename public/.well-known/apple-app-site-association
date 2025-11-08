@@ -4,6 +4,7 @@
       {
         "appIDs": ["RVS9MRHL29.com.dmm.games.pf.storekit.sdk.sample"],
         "components": [
+	  { "/": "/link" },
 	  { "/": "/link/*" },      
           { "/": "/products/*" },
           { "/": "/news/*" },
